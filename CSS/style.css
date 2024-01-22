@@ -35,10 +35,11 @@ html,body{
 .wrapper{
     width: min(37.5rem,100%);
     padding-inline: 2rem;
-    margin: auto;
+    margin-inline: auto;
+    height: 100rem; /*Altura incluida somente para espaçar entre o último elemento e o rodapé dá página*/
+ 
+    
 }
-
-
 
 /*====================CONTENT====================*/
 
@@ -78,13 +79,13 @@ width: 100%;
     border-radius: 1rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
-    box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.158);
+    box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.288);
 }
 
 .subscription-container .test p{
     font-size: 1.6rem;
-    color: white;
-    opacity: 0.7;
+    color: var(--Grayish-Blue);
+   
 }
 
 .subscription-container .test a{
@@ -103,13 +104,15 @@ width: 100%;
     margin: auto;
     background-color: white;
     border-radius:1rem;
+    box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.288);
+    margin-bottom: 2rem;
 }
 
 .wrapper .subscription-box input{
     width: 85%;
     margin: auto;
     display: block;
-    height: 5rem;
+    height: 6rem;
     margin-bottom: 1.5rem;
     padding-left: 2rem;
     font-weight: 900;
@@ -139,6 +142,7 @@ width: 100%;
 .wrapper .subscription-box a{
     text-decoration: none;
     color: var(--Red);
+    font-weight: 700;
 }
 
 /*====================SUSCRIPTION-BOX====================*/
