@@ -1,148 +1,233 @@
 /*====================GLOBAL====================*/
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-:root{
-    font-size: 62.5%;
-    --Red:hsl(0, 100%, 74%);
-    --Green:hsl(154, 59%, 51%);
-    --blue:hsl(248, 32%, 49%);
-    --Dark-Blue: hsl(249, 10%, 26%);
-    --Grayish-Blue: hsl(246, 25%, 77%);
-    /*
+:root {
+  font-size: 62.5%;
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Green-hover: hsla(154, 59%, 51%, 0.527);
+  --blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  /*
     Fonts:
     font-family: "Poppins", sans-serif;
     Weights: 400, 500, 600, 700
     */
-
 }
 
-
-html,body{
-    width: 100%;
-    height: 100%;
-    background-image: url("/Assets/images/bg-intro-mobile.png");
-    background-color:var(--Red);
-    font-family: "Poppins", sans-serif;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("/Assets/images/bg-intro-mobile.png");
+  background-color: var(--Red);
+  font-family: "Poppins", sans-serif;
 }
 
-
-.wrapper{
-    width: min(37.5rem,100%);
-    padding-inline: 2rem;
-    margin-inline: auto;
-    height: 100rem; /*Altura incluida somente para espaçar entre o último elemento e o rodapé dá página*/
- 
-    
+.wrapper {
+  width: min(37.5rem, 100%);
+  padding-inline: 2rem;
+  margin-inline: auto;
+  height: 100rem; /*Altura incluida somente para espaçar entre o último elemento e o rodapé dá página*/
 }
 
 /*====================CONTENT====================*/
 
-.wrapper .content{
-    padding-top: 7rem;
-    width: 100%;
-    margin: auto;
-    text-align: center;
+.wrapper .content-text {
+  padding-top: 7rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
-.wrapper .content h1{
-    font-size:2.6rem;
-    color:#FFFFFF;
+.wrapper .content-text h1 {
+  font-size: 2.6rem;
+  color: #ffffff;
 }
 
-.wrapper .content p{
-    margin-top: 2rem;
-    font-size:1.6rem;
-    color:#FFFFFF;
-    font-weight: 600;
-    opacity: 0.7;
+.wrapper .content-text p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 600;
+  opacity: 0.7;
 }
-
 
 /*====================SUSCRIPTION-CONTAINER====================*/
 .wrapper .subscription-container {
-width: 100%;
+  width: 100%;
 }
 
-.wrapper .subscription-container .test{
-    width: 100%;
-    background-color: var(--blue);
-    margin: auto;
-    text-align: center;
-    padding-block: 2rem;
-    padding-inline: 6rem;
-    border-radius: 1rem;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.288);
+.wrapper .subscription-container .test {
+  width: 100%;
+  background-color: var(--blue);
+  margin: auto;
+  text-align: center;
+  padding-block: 2rem;
+  padding-inline: 6rem;
+  border-radius: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.288);
 }
 
-.subscription-container .test p{
-    font-size: 1.6rem;
-    color: var(--Grayish-Blue);
-   
+.subscription-container .test p {
+  font-size: 1.6rem;
+  color: var(--Grayish-Blue);
 }
 
-.subscription-container .test a{
-    font-size: 1.6rem;
-    padding-right: 0.1rem;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    opacity: 1;
+.subscription-container .test a {
+  font-size: 1.6rem;
+  padding-right: 0.1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  opacity: 1;
 }
 
 /*====================SUSCRIPTION-BOX====================*/
-.wrapper .subscription-box{
-    padding-block: 2.5rem;
+.wrapper .subscription-box {
+  padding-block: 2.5rem;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.288);
+  margin-bottom: 2rem;
+}
+
+.wrapper .subscription-box input {
+  width: 85%;
+  margin: auto;
+  display: block;
+  height: 6rem;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Grayish-Blue);
+  opacity: 0.8;
+}
+
+.subscription-box input[type="submit"] {
+  padding-left: 0;
+  background-color: var(--Green);
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.subscription-box input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--Green-hover);
+}
+
+.wrapper .subscription-box p {
+  padding-inline: 3rem;
+  color: var(--Grayish-Blue);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.wrapper .subscription-box a {
+  text-decoration: none;
+  color: var(--Red);
+  font-weight: 700;
+}
+
+/*====================MEDIA-SCREEN (RESPONSIVIDADE WEB/TABLET)====================*/
+
+@media (min-width: 768px) {
+  /*====================WRAPPER===================*/
+  .wrapper {
+    width: min(76, 8rem, 100%);
+  }
+}
+
+/*====================MEDIA-SCREEN (RESPONSIVIDADE DESKTOP)====================*/
+@media (min-width: 1440px) {
+  html,
+  body {
+    background-image: url("/Assets/images/bg-intro-desktop.png");
+  }
+  /*====================WRAPPER===================*/
+  .wrapper {
+    width: min(144rem, 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80rem;
+  }
+
+  /*====================CONTENT====================*/
+  .wrapper .content {
+    width: 90%;
+  }
+  .wrapper .content-text {
+    width: 100%;
+    margin: auto;
+    text-align: start;
+  }
+
+  .wrapper .content-text h1 {
+    font-size: 5rem;
+  }
+
+  .wrapper .content-text p {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  /*====================SUSCRIPTION-CONTAINER====================*/
+  .wrapper .subscription-container .test {
+    margin-top: 12rem;
+  }
+  .wrapper .subscription-container {
+    width: 100%;
+  }
+
+  /*====================SUSCRIPTION-CONTAINER====================*/
+
+  .subscription-container .test p {
+    font-size: 2rem;
+  }
+
+  .subscription-container .test a {
+    font-size: 2rem;
+  }
+
+  /*====================SUSCRIPTION-BOX====================*/
+  .wrapper .subscription-box {
+    padding-block: 5rem;
     width: 100%;
     margin: auto;
     background-color: white;
-    border-radius:1rem;
+    border-radius: 1rem;
     box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.288);
     margin-bottom: 2rem;
-}
+  }
 
-.wrapper .subscription-box input{
-    width: 85%;
-    margin: auto;
-    display: block;
-    height: 6rem;
+  .wrapper .subscription-box input {
+    height: 8rem;
     margin-bottom: 1.5rem;
-    padding-left: 2rem;
-    font-weight: 900;
-    border-radius:0.5rem;
-    border:1px solid var(--Grayish-Blue);
-    opacity: 0.8;
-}
+    padding-left: 4rem;
+  }
 
-.subscription-box input[type=button]{
-    padding-left: 0;
-    background-color: var(--Green);
-    color: white;
-    font-weight: 600;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    opacity: 1;
-}
+  .subscription-box input[type="submit"] {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
 
-.wrapper .subscription-box p{
-    padding-inline: 3rem;
-    color: var(--Grayish-Blue);
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 600;
+  .wrapper .subscription-box p {
+    font-size: 1.4rem;
+  }
 }
-
-.wrapper .subscription-box a{
-    text-decoration: none;
-    color: var(--Red);
-    font-weight: 700;
-}
-
-/*====================SUSCRIPTION-BOX====================*/
