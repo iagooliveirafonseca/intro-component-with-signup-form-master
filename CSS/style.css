@@ -1,0 +1,144 @@
+/*====================GLOBAL====================*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 62.5%;
+    --Red:hsl(0, 100%, 74%);
+    --Green:hsl(154, 59%, 51%);
+    --blue:hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    /*
+    Fonts:
+    font-family: "Poppins", sans-serif;
+    Weights: 400, 500, 600, 700
+    */
+
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url("/Assets/images/bg-intro-mobile.png");
+    background-color:var(--Red);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.wrapper{
+    width: min(37.5rem,100%);
+    padding-inline: 2rem;
+    margin: auto;
+}
+
+
+
+/*====================CONTENT====================*/
+
+.wrapper .content{
+    padding-top: 7rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.wrapper .content h1{
+    font-size:2.6rem;
+    color:#FFFFFF;
+}
+
+.wrapper .content p{
+    margin-top: 2rem;
+    font-size:1.6rem;
+    color:#FFFFFF;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+
+/*====================SUSCRIPTION-CONTAINER====================*/
+.wrapper .subscription-container {
+width: 100%;
+}
+
+.wrapper .subscription-container .test{
+    width: 100%;
+    background-color: var(--blue);
+    margin: auto;
+    text-align: center;
+    padding-block: 2rem;
+    padding-inline: 6rem;
+    border-radius: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1rem 0 0 rgba(61, 61, 61, 0.158);
+}
+
+.subscription-container .test p{
+    font-size: 1.6rem;
+    color: white;
+    opacity: 0.7;
+}
+
+.subscription-container .test a{
+    font-size: 1.6rem;
+    padding-right: 0.1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    opacity: 1;
+}
+
+/*====================SUSCRIPTION-BOX====================*/
+.wrapper .subscription-box{
+    padding-block: 2.5rem;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius:1rem;
+}
+
+.wrapper .subscription-box input{
+    width: 85%;
+    margin: auto;
+    display: block;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    font-weight: 900;
+    border-radius:0.5rem;
+    border:1px solid var(--Grayish-Blue);
+    opacity: 0.8;
+}
+
+.subscription-box input[type=button]{
+    padding-left: 0;
+    background-color: var(--Green);
+    color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.wrapper .subscription-box p{
+    padding-inline: 3rem;
+    color: var(--Grayish-Blue);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.wrapper .subscription-box a{
+    text-decoration: none;
+    color: var(--Red);
+}
+
+/*====================SUSCRIPTION-BOX====================*/
