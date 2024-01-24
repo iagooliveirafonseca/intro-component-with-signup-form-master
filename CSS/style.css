@@ -93,7 +93,7 @@ body {
 
 /*====================SUSCRIPTION-BOX====================*/
 .wrapper .subscription-box {
-  padding-block: 2.5rem;
+  padding-block: 1.5rem;
   width: 100%;
   margin: auto;
   background-color: white;
@@ -107,7 +107,7 @@ body {
   margin: auto;
   display: block;
   height: 6rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   padding-left: 2rem;
   font-weight: 900;
   border-radius: 0.5rem;
@@ -136,6 +136,13 @@ body {
   font-size: 1.2rem;
   text-align: center;
   font-weight: 600;
+}
+
+.subscription-box span .error{
+  display: none;
+  color: red;
+  text-align: end;
+  opacity: 0.7;
 }
 
 .wrapper .subscription-box a {
@@ -220,6 +227,10 @@ body {
     height: 8rem;
     margin-bottom: 1.5rem;
     padding-left: 4rem;
+  }
+
+  .subscription-box span .error{
+  padding-right:5rem ;
   }
 
   .subscription-box input[type="submit"] {
