@@ -11,11 +11,11 @@
             validate_password()
         })
 
-     
 
         function set_error(index){
             inputs[index].style.border = "1px solid red"
-            spans_error[index].style.display = "block"      
+            spans_error[index].style.display = "block"   
+            inputs[index].placeholder = ""  
         }
 
         function remove_error(index){
@@ -44,16 +44,21 @@
 
         function validate_email(){
             if(!email_regex.test(inputs[2].value)){
+                const email_error = document.getElementById("email")
+                email_error.placeholder = 'email@exemple.com.br';
+                email_error.classList.add("email-error")
                 set_error(2)
             }
             else{
                 remove_error(2)
+                const email_error = document.getElementById("email")
+                email_error.classList.remove("email-error")
             }
         }
 
         function validate_password(){
-            if(inputs[3].value.length == ""){
-                set_error(3)
+            if(inputs[3].value.length < 8){
+              set_error(3)
             }
             else{
                 remove_error(3)

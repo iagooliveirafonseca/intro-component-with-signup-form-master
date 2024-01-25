@@ -115,6 +115,10 @@ body {
   opacity: 0.8;
 }
 
+.email-error::placeholder{
+  color: red;
+}
+
 .subscription-box input[type="submit"] {
   padding-left: 0;
   background-color: var(--Green);
