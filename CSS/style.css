@@ -115,6 +115,23 @@ body {
   opacity: 0.8;
 }
 
+
+.wrapper .subscription-box .i_error_icons{
+  position: absolute;
+  width: 40px;
+  height: 90px;
+  margin-left: 27rem;
+  background-image: url('/Assets/images/icon-error.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  display: block;
+}
+
+.wrapper .subscription-box .i_error_icons:first-of-type{
+  height: 60px;
+}
+
 .email-error::placeholder{
   color: red;
 }
@@ -231,6 +248,16 @@ body {
     height: 8rem;
     margin-bottom: 1.5rem;
     padding-left: 4rem;
+  }
+
+  .wrapper .subscription-box .i_error_icons{
+    height: 110px;
+    margin-left: 57rem;
+    display: none;
+  }
+
+  .wrapper .subscription-box .i_error_icons:first-of-type{
+    height: 80px;
   }
 
   .subscription-box span .error{

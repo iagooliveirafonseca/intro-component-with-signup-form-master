@@ -36,12 +36,16 @@
       </div>
       <div class="subscription-box">
         <form>
+          <i class="i_error_icons"></i>
           <input type="text"  id="name" name="name" maxlength="20"  placeholder="First Name" class="inputs" oninput="validate_name()">
           <span class="spans"><p class="error">First Name cannot be empty</p></span>
+          <i class="i_error_icons"></i>
           <input type="text"  id="last_name" name="last_name" maxlength="40"  placeholder="Last Name"class="inputs" oninput=" validate_last_name()"> 
           <span class="spans"><p class="error">Last Name cannot be empty</p></span>
+          <i class="i_error_icons"></i>
           <input type="email" id="email" name="email" placeholder="Email Address" class="inputs" oninput="validate_email()">
           <span class="spans"><p class="error">looks like this is not an email</p></span>
+          <i class="i_error_icons"></i>
           <input type="password" id="passwor"  name="password"  placeholder="Password" class="inputs" oninput=" validate_password()">
           <span class="spans"><p class="error">password cannot be empty</p></span>
           <input type="submit" value="Claim Your Free Trial">
