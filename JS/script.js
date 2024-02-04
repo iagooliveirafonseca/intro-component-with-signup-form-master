@@ -22,6 +22,7 @@
         function remove_error(index){
             inputs[index].style.border = ""
             spans_error[index].style.display = ""
+            i_error[index].style.display = ""
         }
 
 
